@@ -37,3 +37,33 @@ SynapseAPP es una aplicación que permite gestionar [usuarios, sesiones y datos 
 ```bash
 cd backend
 mvn clean install      # o ./gradlew build si usas Gradle
+```  
+
+### Frontend
+```bash
+cd frontendWeb
+npm install           # o yarn install / pnpm install
+``` 
+
+## ▶ Ejecución
+
+### Backend
+```bash
+cd backend
+mvn spring-boot:run    # o ./gradlew bootRun
+```  
+
+### Frontend
+```bash
+cd frontendWeb
+npm run dev            # o yarn dev / pnpm dev
+```
+## ⚠️ Normas del proyecto
+- Cada miembro debe trabajar en su propia rama.
+- Antes de hacer merge, actualizar desde `main`.
+
+## 📚 Recursos
+
+- [Documentación Spring Boot](https://spring.io/projects/spring-boot)  
+- [Documentación React](https://reactjs.org/docs/getting-started.html)  
+- [Documentación Vite](https://vitejs.dev/guide/)  
