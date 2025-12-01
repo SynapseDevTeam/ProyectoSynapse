@@ -1,4 +1,4 @@
-# ![SynapseAPP Logo](frontendWeb/public/logos/vite.svg) SynapseAPP
+# ![SynapseAPP Logo](frontendWeb/public/logos/logoSynapse.svg) SynapseAPP
 
 Proyecto de **Desarrollo de Aplicaciones Multiplataforma (DAM)**.  
 Este proyecto es colaborativo y desarrollado por varios alumnos, dividido en **backend** (Spring Boot) y **frontend web** (React/Vite).
