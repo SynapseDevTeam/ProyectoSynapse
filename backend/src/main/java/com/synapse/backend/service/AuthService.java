@@ -3,7 +3,6 @@ package com.synapse.backend.service;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.synapse.backend.config.JWTUtil;
 import com.synapse.backend.dto.user.AuthResponse;
 import com.synapse.backend.dto.user.LogInDTO;
 import com.synapse.backend.dto.user.RegUserDTO;
@@ -13,6 +12,7 @@ import com.synapse.backend.exceptions.excep.EmailNotFoundException;
 import com.synapse.backend.exceptions.excep.EmailYaRegistrado;
 import com.synapse.backend.model.User;
 import com.synapse.backend.repository.UserRepository;
+import com.synapse.backend.security.JWTUtil;
 
 @Service
 public class AuthService {

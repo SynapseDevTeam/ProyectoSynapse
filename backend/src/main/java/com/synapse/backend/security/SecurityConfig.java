@@ -1,4 +1,4 @@
-package com.synapse.backend.config;
+package com.synapse.backend.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
