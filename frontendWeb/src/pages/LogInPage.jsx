@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { setUserSession } from "../../utils/session";
-import styles from './LogInPage.module.css'; 
+import { setUserSession } from "../utils/session";
+import styles from '../styles/authFormStyle.module.css'; 
 
 function LogInPage(){
     const navigate = useNavigate();
@@ -38,6 +38,9 @@ function LogInPage(){
     return(
         <>
             <form onSubmit={handleLogin} className={styles.formContainer}>
+                <div align="center">
+                    <img src="/public/logos/logoSynapseGrisClaro.svg" alt="SynapseAPP Logo" width="200"/>
+                </div>
                 <div>
                     <label>Email:</label>
                     <input
