@@ -1,0 +1,47 @@
+/* LogInPage.module.css */
+
+.formContainer {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.formContainer div {
+  margin-bottom: 15px;
+}
+
+.formContainer label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formContainer input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.formContainer button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formContainer button:hover {
+  background-color: #0056b3;
+}
+
+.formContainer p {
+  margin-top: 15px;
+  text-align: center;
+}
