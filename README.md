@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="frontendWeb/public/logos/logoSynapse.svg" alt="SynapseAPP Logo" width="200"/>
+  <img src="frontendWeb/public/logos/logoSynapseGrisClaro.svg" alt="SynapseAPP Logo" width="200"/>
 </div>
 
 # SynapseAPP
