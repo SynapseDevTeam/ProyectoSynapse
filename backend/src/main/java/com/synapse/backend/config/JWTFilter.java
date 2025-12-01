@@ -48,11 +48,11 @@ public class JWTFilter extends OncePerRequestFilter {
         if (authHeader != null && authHeader.startsWith("Bearer ")) {
             try {
                 String token = authHeader.substring(7);
-                String username = jwtUtil.extractUsername(token);
+                String subject = jwtUtil.extractSubject(token);
 
-                if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
-                    User user = userRep.findByEmail(username).orElse(null);
-                    if (user != null && jwtUtil.validateToken(token, username)) {
+                if (subject != null && SecurityContextHolder.getContext().getAuthentication() == null) {
+                    User user = userRep.findByEmail(subject).orElse(null);
+                    if (user != null && jwtUtil.validateToken(token, subject)) {
                         List<SimpleGrantedAuthority> authorities =
                         List.of(new SimpleGrantedAuthority("ROLE_" + user.getRol()));
 

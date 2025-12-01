@@ -18,16 +18,16 @@ public class JWTUtil {
 
     private final long EXPIRATION_MS = 1000 * 60 * 60 * 24;
 
-    public String generateToken(String username){
+    public String generateToken(String subject){
         return Jwts.builder()
-                .setSubject(username)
+                .setSubject(subject)
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(System.currentTimeMillis() + EXPIRATION_MS))
                 .signWith(SECRET_KEY, SignatureAlgorithm.HS256)
                 .compact();
     }
 
-    public String extractUsername(String token){
+    public String extractSubject(String token){
         return Jwts.parserBuilder()
                 .setSigningKey(SECRET_KEY)
                 .build()
@@ -37,7 +37,7 @@ public class JWTUtil {
     }
 
     public boolean validateToken(String token, String username) {
-        String extractedUsername = extractUsername(token);
+        String extractedUsername = extractSubject(token);
         return extractedUsername.equals(username) && !isTokenExpired(token);
     }
 

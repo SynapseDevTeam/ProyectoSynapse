@@ -38,5 +38,4 @@ public class UsersController {
         User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         return new UserDTO(user.getId(), user.getUserName(), user.getEmail());
     }
-    
 }
