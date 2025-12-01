@@ -1,4 +1,4 @@
-package com.synapse.backend.config;
+package com.synapse.backend.security;
 
 import java.util.Date;
 
