@@ -2,10 +2,11 @@
   max-width: 400px;
   margin: 50px auto;
   padding: 30px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-border-form);
   border-radius: 10px;
-  background-color: #f9f9f9;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: var(--color-bg-form);
+  box-shadow: 0 0 10px var(--color-shadow);
+  color: var(--color-text-form);
 }
 
 .formContainer div {
@@ -21,22 +22,24 @@
 .formContainer input {
   width: 100%;
   padding: 8px;
-  border: 1px solid #aaa;
+  border: 1px solid var(--color-input-border);
   border-radius: 5px;
+  background-color: var(--color-bg-form);
+  color: var(--color-text-form);
 }
 
 .formContainer button {
   width: 100%;
   padding: 10px;
-  background-color: #007bff;
-  color: white;
+  background-color: var(--color-button-bg);
+  color: var(--color-button-text);
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .formContainer button:hover {
-  background-color: #0056b3;
+  background-color: var(--color-button-hover);
 }
 
 .formContainer p {
