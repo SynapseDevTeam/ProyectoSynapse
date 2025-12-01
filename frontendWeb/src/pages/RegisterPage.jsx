@@ -1,7 +1,8 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { setUserSession } from "../../utils/session";
+import { setUserSession } from "../utils/session";
+import styles from '../styles/authFormStyle.module.css'; 
 
 function RegisterPage(){
     const navigate = useNavigate()
@@ -37,7 +38,10 @@ function RegisterPage(){
 
     return (
         <>
-            <form onSubmit={handleReg}>
+            <form onSubmit={handleReg} className={styles.formContainer}>
+                <div align="center">
+                    <img src="/public/logos/logoSynapseGrisClaro.svg" alt="SynapseAPP Logo" width="200"/>
+                </div>
                 <div>
                     <label>Email: </label>
                     <input

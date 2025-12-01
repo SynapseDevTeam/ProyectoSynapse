@@ -1,7 +1,8 @@
 import { Route, Routes } from "react-router-dom"
-import LogInPage from "./pages/LogInPage/LogInPage"
 import ProtectedRoute from "./components/ProtectedRoute"
-import RegisterPage from "./pages/RegisterPage/RegisterPage"
+
+import LogInPage from "./pages/LogInPage"
+import RegisterPage from "./pages/RegisterPage"
 
 function App() {
 
