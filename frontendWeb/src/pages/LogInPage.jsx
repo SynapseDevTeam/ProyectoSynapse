@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { setUserSession } from "../utils/session";
 import styles from '../styles/authFormStyle.module.css'; 
 import Logo from '../components/Logo.jsx';
+import ButtonTheme from "../components/buttons/ButtonTheme.jsx";
 
 function LogInPage(){
     const navigate = useNavigate();
@@ -38,9 +39,10 @@ function LogInPage(){
 
     return(
         <>
+            <ButtonTheme />
             <form onSubmit={handleLogin} className={styles.formContainer}>
                 <div align="center">
-                    <Logo className="logo"/>
+                    <Logo width={150} height={150}/>
                 </div>
                 <div>
                     <label>Email:</label>

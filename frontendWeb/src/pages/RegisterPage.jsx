@@ -41,7 +41,7 @@ function RegisterPage(){
         <>
             <form onSubmit={handleReg} className={styles.formContainer}>
                 <div align="center">
-                    <Logo className="logo"/>
+                    <Logo width={150} height={150}/>
                 </div>
                 <div>
                     <label>Email: </label>

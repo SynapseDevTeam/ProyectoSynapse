@@ -1,13 +1,14 @@
-export default function Logo({ className }) {
+export default function Logo({width, height}) {
   return (
-    <svg className={className}
-        version="1.0" 
+    <svg className="logo"
+        version="1.0"
+        width={width}
+        height={height}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 5000.000000 5000.000000"
         preserveAspectRatio="xMidYMid meet">
 
-        <g transform="scale(1,-1) translate(0, -5000)"
-        fill="currentColor" stroke="none">
+        <g fill="currentColor" transform="translate(0,5000) scale(1,-1)" stroke="none">
           <path d="M2465 4098 c-27 -10 -82 -43 -95 -58 -3 -3 -84 -68 -180 -145 -96
           -77 -215 -172 -265 -213 -49 -41 -97 -79 -105 -85 -101 -79 -257 -217 -271
           -241 -18 -29 -19 -60 -19 -526 0 -494 0 -496 23 -540 26 -52 59 -78 113 -90

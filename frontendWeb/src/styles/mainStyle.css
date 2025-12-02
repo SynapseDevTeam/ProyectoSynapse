@@ -1,7 +1,9 @@
 :root {
     --bg-color: #ffffff;
+
     --text-color: #000000;
-    --color-bg-form: #f9f9f9;
+    
+    --color-bg-second: #f9f9f9;
     --color-text-form: #000;
     --color-border-form: #ccc;
     --color-input-border: #aaa;
@@ -9,12 +11,18 @@
     --color-button-text: #fff;
     --color-button-hover: #0056b3;
     --color-shadow: rgba(0,0,0,0.1);
+
     --svg-color: #000;
+
+    --btn-theme-color: #FFA500; /* naranja */
+    --btn-bg: transparent;
 }
 
 body.dark {
     --bg-color: #121212;
+
     --text-color: #ffffff;
+
     --color-bg-form: #1e1e1e;
     --color-text-form: #fff;
     --color-border-form: #444;
@@ -23,7 +31,11 @@ body.dark {
     --color-button-text: #fff;
     --color-button-hover: #1a73e8;
     --color-shadow: rgba(0,0,0,0.5);
+
     --svg-color: #fff;
+
+    --btn-theme-color: #FFD700; /* amarillo */
+    --btn-bg: transparent;
 }
 
 .logo {
@@ -32,4 +44,14 @@ body.dark {
 }
 body{
     background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.button-theme{
+    color: var(--text-color);
+    background: var(--btn-bg);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: color 0.3s ease;  
 }

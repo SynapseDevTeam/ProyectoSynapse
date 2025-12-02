@@ -11,12 +11,14 @@ import java.util.List;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 
 
 
 @RestController
 @RequestMapping("/users")
+@CrossOrigin(origins = "${frontend.url}")
 public class UsersController {
 
     private final UserRepository userRep;

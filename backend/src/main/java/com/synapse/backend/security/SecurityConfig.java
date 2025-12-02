@@ -22,6 +22,7 @@ public class SecurityConfig {
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/auth/**").permitAll() // login y register libres
                 .requestMatchers("/users").hasRole("ADMIN")
+                .requestMatchers("/users/me").permitAll()
                 .anyRequest().authenticated()
             )
             .sessionManagement(session -> session
