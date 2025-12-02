@@ -60,11 +60,14 @@ npm run dev            # o yarn dev / pnpm dev
 ```
 
 ## ⚠️ Normas del proyecto
+<<<<<<< HEAD
 - Cambiar en [text](backend/src/main/resources/application.properties)
    ```bash
       spring.datasource.username= #tu user
       spring.datasource.password= #tu password
   ```
+=======
+>>>>>>> 4bd1c15b4558ba0ca92e0dde7d501203e2f89fae
 - Cada miembro debe trabajar en su propia rama personal.
 - Antes de hacer un Pull Request actualiza tu rama personal con
   ```bash
@@ -83,4 +86,4 @@ npm run dev            # o yarn dev / pnpm dev
 
 - [Documentación Spring Boot](https://spring.io/projects/spring-boot)  
 - [Documentación React](https://reactjs.org/docs/getting-started.html)  
-- [Documentación Vite](https://vitejs.dev/guide/)  
+- [Documentación Vite](https://vitejs.dev/guide/)
