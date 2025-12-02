@@ -58,9 +58,26 @@ mvn spring-boot:run    # o ./gradlew bootRun
 cd frontendWeb
 npm run dev            # o yarn dev / pnpm dev
 ```
+
 ## ⚠️ Normas del proyecto
-- Cada miembro debe trabajar en su propia rama.
-- Antes de hacer merge, actualizar desde `main`.
+- Cambiar en [text](backend/src/main/resources/application.properties)
+   ```bash
+      spring.datasource.username= #tu user
+      spring.datasource.password= #tu password
+  ```
+- Cada miembro debe trabajar en su propia rama personal.
+- Antes de hacer un Pull Request actualiza tu rama personal con
+  ```bash
+      git fetch *nombre del remote*
+      git checkout *nombre de tu rama personal*
+      git rebase *nombre del remote*/main
+  ```
+- Si hay conflictos durante el rebase, resuélvelos en tu editor, luego haz:
+  ```bash
+      git add archivo_conflictivo
+      git rebase --continue
+  ```
+-  Finalmente sube tu rama al remoto
 
 ## 📚 Recursos
 
