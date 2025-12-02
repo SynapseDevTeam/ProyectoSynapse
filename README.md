@@ -60,7 +60,7 @@ npm run dev            # o yarn dev / pnpm dev
 ```
 
 ## ⚠️ Normas del proyecto
-- Cambiar en [text](backend/src/main/resources/application.properties)
+- Cambiar en backend/src/main/resources/application.properties
    ```bash
       spring.datasource.username= #tu user
       spring.datasource.password= #tu password
