@@ -58,7 +58,13 @@ mvn spring-boot:run    # o ./gradlew bootRun
 cd frontendWeb
 npm run dev            # o yarn dev / pnpm dev
 ```
+
 ## ⚠️ Normas del proyecto
+- Cambiar en backend/src/main/resources/application.properties
+   ```bash
+      spring.datasource.username= #tu user
+      spring.datasource.password= #tu password
+  ```
 - Cada miembro debe trabajar en su propia rama personal.
 - Antes de hacer un Pull Request actualiza tu rama personal con
   ```bash

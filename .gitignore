@@ -1,2 +1,4 @@
 ### VS Code ###
 .vscode/
+
+./SynapseAPP/backend/src/main/resources/application.properties
