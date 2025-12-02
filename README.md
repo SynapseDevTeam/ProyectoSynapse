@@ -52,6 +52,7 @@ npm install           # o yarn install / pnpm install
 cd backend
 mvn spring-boot:run    # o ./gradlew bootRun
 ```  
+- Tambien puedes instalar la extension [Spring Boot Extension Pack] (https://code.visualstudio.com/docs/java/java-spring-boot) y lanzar el backend dede la pestaña Spring Boot Dashboard
 
 ### Frontend
 ```bash
