@@ -59,11 +59,22 @@ cd frontendWeb
 npm run dev            # o yarn dev / pnpm dev
 ```
 ## ⚠️ Normas del proyecto
-- Cada miembro debe trabajar en su propia rama.
-- Antes de hacer merge, actualizar desde `main`.
+- Cada miembro debe trabajar en su propia rama personal.
+- Antes de hacer un Pull Request actualiza tu rama personal con
+  ```bash
+      git fetch *nombre del remote*
+      git checkout *nombre de tu rama personal*
+      git rebase *nombre del remote*/main
+  ```
+- Si hay conflictos durante el rebase, resuélvelos en tu editor, luego haz:
+  ```bash
+      git add archivo_conflictivo
+      git rebase --continue
+  ```
+-  Finalmente sube tu rama al remoto
 
 ## 📚 Recursos
 
 - [Documentación Spring Boot](https://spring.io/projects/spring-boot)  
 - [Documentación React](https://reactjs.org/docs/getting-started.html)  
-- [Documentación Vite](https://vitejs.dev/guide/)  
+- [Documentación Vite](https://vitejs.dev/guide/)
